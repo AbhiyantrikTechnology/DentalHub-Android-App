@@ -23,7 +23,7 @@ continued care and follow-up.
 * Patient recall status
 * Patient treatment status
 * Odontogram
-* Flag feature for delete or modify encounter
+* Flag feature to delete or modify encounter
 
 ## Configuration
 
@@ -33,9 +33,10 @@ Add your `google-services.json` file to `app/` directory
 ### Set Backend Configuration
 Set `api_url` in `src/main/res/values/strings.xml` to the backend API url.  
 
-## Contributing <Link>
-Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
-Please make sure to update tests as appropriate.
+## Contributing
+We encourage you to contribute to DentalHub Android App! Please check out the [Contributing to
+DentalHub Android App guide](https://github.com/AbhiyantrikTechnology/DentalHub-Android-App/blob/master/CONTRIBUTING.md)
+for guidelines about how to proceed. [Join us!](https://groups.google.com/forum/#!forum/dentalhub)
 
 
 ## License
