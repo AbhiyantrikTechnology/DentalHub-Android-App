@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/treatment_smart_applied">
+        <shape android:shape="rectangle">
+            <stroke android:width="2dp" android:color="@color/grey_500"/>
+        </shape>
+    </item>
+</layer-list>

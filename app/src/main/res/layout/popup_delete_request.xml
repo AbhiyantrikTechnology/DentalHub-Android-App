@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+    <ImageButton
+            android:id="@+id/btnDeleteEncounterCloseDialog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:background="@android:color/transparent"
+            android:padding="6dp"
+            android:src="@android:drawable/ic_delete" />
+
+    <RadioGroup
+            android:id="@+id/rgDeleteRequest"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="@string/delete"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+        <RadioButton
+                android:id="@+id/rbDeleteAccidentalEntry"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Accidental Entry"
+                android:textSize="16sp"/>
+
+        <RadioButton
+                android:id="@+id/rbDeleteDuplicateEncounter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Duplicate Encounter"
+                android:textSize="16sp"/>
+
+        <RadioButton
+                android:id="@+id/rbDeleteIncorrectPatient"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Incorrect Patient"
+                android:textSize="16sp"/>
+
+        <RadioButton
+                android:id="@+id/rbDeleteIncorrectUser"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Incorrect User"
+                android:textSize="16sp"/>
+
+        <RadioButton
+                android:id="@+id/rbDeleteOtherReason"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Other"
+                android:textSize="16sp"/>
+
+        <EditText
+                android:id="@+id/etDeleteOtherReasonMessage"
+                android:visibility="invisible"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="start"
+                android:hint="@string/other"
+                android:lines="3"
+                android:padding="10dp"
+                android:textSize="24sp" />
+
+    </RadioGroup>
+
+    <Button
+            android:id="@+id/btnRequestDelete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:text="Request Delete" />
+
+</LinearLayout>

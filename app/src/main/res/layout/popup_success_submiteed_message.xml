@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+    <ImageButton
+            android:id="@+id/btnModifyEncounterCloseDialog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:background="@android:color/transparent"
+            android:padding="6dp"
+            android:src="@android:drawable/ic_delete" />
+
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="28dp"
+            android:paddingBottom="80dp"
+            android:text="@string/request_submitted_successfully"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textSize="20sp" />
+
+</LinearLayout>

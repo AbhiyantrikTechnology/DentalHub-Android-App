@@ -1,0 +1,10 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="form_col_1_weight">0.6</dimen>
+    <dimen name="form_col_2_weight">0.4</dimen>
+    <dimen name="default_font_size">18sp</dimen>
+    <dimen name="spinner_default_height">35dp</dimen>
+    <dimen name="fieldBottomMargin">8dp</dimen>
+    <dimen name="fieldTopMargin">8dp</dimen>
+    <dimen name="userInfoFragment">25dp</dimen>
+</resources>

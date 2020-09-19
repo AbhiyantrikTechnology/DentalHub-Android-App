@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="months">
+        <item>Baisakh</item>
+        <item>Jestha</item>
+        <item>Ashar</item>
+        <item>Shrawan</item>
+        <item>Bhadra</item>
+        <item>Ashoj</item>
+        <item>Kartik</item>
+        <item>Mangsir</item>
+        <item>Poush</item>
+        <item>Magh</item>
+        <item>Falgun</item>
+        <item>Chaitra</item>
+    </string-array>
+    <string-array name="gender_list">
+        <item>male</item>
+        <item>female</item>
+        <item>other</item>
+    </string-array>
+    <string-array name="education_level_list">
+        <item>uneducated</item>
+        <item>literate</item>
+        <item>graduate</item>
+    </string-array>
+
+    <string-array name="carries_risk">
+        <item>Low</item>
+        <item>Medium</item>
+        <item>High</item>
+    </string-array>
+
+</resources>

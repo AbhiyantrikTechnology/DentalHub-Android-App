@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ActivitySelectorActivity"
+        android:padding="16dp"
+>
+
+
+
+    <androidx.cardview.widget.CardView
+            android:id="@+id/cardView"
+            android:background="@color/cardBg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="16dp"
+    >
+
+        <LinearLayout
+                android:padding="16dp"
+                android:orientation="vertical"
+                android:layout_width="420dp"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:layout_height="wrap_content">
+            <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center">
+                <ImageView
+                        android:src="@drawable/activity"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                <TextView
+                        android:text="@string/select_activity"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="20sp"
+                        android:layout_marginStart="16dp"
+                />
+            </LinearLayout>
+            <View
+                    android:background="@color/grey_300"
+                    android:layout_height="1dp"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="8dp"
+            />
+            <RadioGroup android:id="@+id/rgActivities"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                <RadioButton android:id="@+id/radioHealthPostActivity"
+                             android:layout_width="wrap_content"
+                             android:layout_height="wrap_content"
+                             android:text="@string/health_post"
+                             android:layout_marginTop="8dp"
+                             android:layout_marginBottom="8dp"
+                />
+                <RadioButton android:id="@+id/radioSchoolSeminar"
+                             android:layout_width="wrap_content"
+                             android:layout_height="wrap_content"
+                             android:text="@string/school_seminar"
+                             android:layout_marginTop="8dp"
+                             android:layout_marginBottom="8dp"
+                />
+<!--                <Spinner-->
+<!--                        android:id="@+id/spinnerSchoolSeminar"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="match_parent"-->
+<!--                        android:layout_marginTop="8dp"-->
+<!--                        android:layout_marginBottom="8dp"-->
+<!--                        />-->
+                <RadioButton android:id="@+id/radioCommunityOutreach"
+                             android:layout_width="wrap_content"
+                             android:layout_height="wrap_content"
+                             android:text="@string/community_outreach"
+                             android:layout_marginTop="8dp"
+                             android:layout_marginBottom="8dp"
+                />
+<!--                <Spinner-->
+<!--                        android:id="@+id/spinnerCommunityOutreach"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="match_parent"-->
+<!--                        android:layout_marginTop="8dp"-->
+<!--                        android:layout_marginBottom="8dp"-->
+<!--                        />-->
+                <RadioButton android:id="@+id/radioTraining"
+                             android:layout_width="wrap_content"
+                             android:layout_height="wrap_content"
+                             android:text="@string/training"
+                             android:layout_marginTop="8dp"
+                             android:layout_marginBottom="8dp"
+                />
+<!--                <Spinner-->
+<!--                        android:id="@+id/spinnerTranning"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="match_parent"-->
+<!--                        android:layout_marginTop="8dp"-->
+<!--                        android:layout_marginBottom="8dp"-->
+<!--                        />-->
+            </RadioGroup>
+            <AutoCompleteTextView
+                    android:id="@+id/etOtherDetailsActivity"
+                    android:visibility="gone"
+                    app:layout_constraintTop_toBottomOf="@+id/rgActivities"
+                    android:hint="@string/other_details"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_height="wrap_content"
+                    android:layout_width="320dp"
+                    android:completionThreshold="1"
+            />
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <Button
+            android:id="@+id/btnGo"
+            android:text="@string/go"
+            android:layout_width="420dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/default_button_background"
+            app:layout_constraintTop_toBottomOf="@+id/cardView"
+            android:padding="8dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+    />
+    <Button
+            android:id="@+id/btnLogout"
+            android:text="@string/logout"
+            android:layout_width="420dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/logout_button_background"
+            app:layout_constraintTop_toBottomOf="@+id/btnGo"
+            android:padding="8dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+    />
+    <ProgressBar
+            android:id="@+id/progressbarActivitySelector"
+            android:elevation="2dp"
+            android:visibility="visible"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item >
+        <shape android:shape="rectangle"  >
+            <corners android:radius="8dip" />
+            <stroke android:width="1dip" android:color="@color/etColor" />
+            <solid android:color="@color/etColor"/>
+        </shape>
+    </item>
+    <item android:start="0dp" android:end="368dp">
+        <shape android:shape="rectangle">
+            <corners android:radius="8dip" />
+            <solid android:color="@color/authPrepend" />
+        </shape>
+    </item>
+</layer-list>
