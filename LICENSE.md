@@ -1,5 +1,4 @@
-Dental Hub Project 
-http://dentalhubproject.org/
+# [Dental Hub Project](http://dentalhubproject.org/)
 
 The MIT License (MIT)
 Copyright (c) <2020> 
